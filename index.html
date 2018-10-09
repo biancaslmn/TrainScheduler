@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
+    <!--CSS-->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/style.css">
+ 
+    <!--JS/Jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="assets/moment.js"></script>
+    <script src="assets/script.js"></script>
+</head>
+<body>
+
+
+    <!--Jumbotron containing train title-->
+      <div class="jumbotron">
+  <div class="container">
+    <h1 class="display-4">Plan your Escape</h1>
+    <p class="lead">This is your chance to explore.</p>
+  </div>
+</div>
+
+   <!--Train Schedule header-->
+<h1>Train Schedule</h1>
+<img src="assets/images/trainIcon.png" alt="train">
+<hr>
+
+<div class="formHolder">
+
+    <div>
+        <table id="trainTable">
+            <tr>
+                <th><i class="trainName"></i> Train Name</th>
+                <th><i class="desTination"></i> Destination</th>
+                <th id="times"><i class="frequencyMin"></i> Frequency (min)</th>
+                <th id="times"><i class="NextArrival"></i> Next Arrival</th>
+                <th id="times"><i class="minutesAway"></i> Minutes Away</th>
+            </tr>
+        </table>
+    </div>
+  <br>
+       
+        <div class="panelBody">
+            <div>
+                <div class="panelDefault">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add Train</h3>
+                    </div>
+                    <br>
+            <form>
+                <label for="trainNameInput">Train Name</label>
+                <br>
+                <input type="text" class="form-control" name="trName" id="trainNameInput" aria-describedby="TrainFormHelp" placeholder="GetAway Express" required>
+                <label for="destinationInput">Destination</label>
+                <br>
+                <input type="text" class="form-control" name="trDest" id="destinationInput" placeholder="Away" required>
+                <br>
+            </form>
+
+            <form class="form-inline">
+                <label for="firstTrainInput">First Train Time</label>
+                <input type="time" class="form-control mx-sm-3 mb-2" name="trTime" id="firstTrainInput" required>
+                <label>Frequency (min)</label>
+                <input type="number" class="form-control mx-sm-3 mb-2" name="trFrequency" id="frequencyInput" placeholder="30">
+                <button id="addTrainBtn" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  
+
+
+ 
+</body>
+</html>
