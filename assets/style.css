@@ -1,0 +1,72 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+h1{
+    margin:0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.jumbotron{
+    height:300px;
+    background-color: pink;
+    background-image: url('../assets/images/boston.jpeg');
+}
+
+
+img{
+    height: 30px;
+    width:30px;
+}
+
+#addTrainBtn{
+    border-color: bisque;
+    background-color: rgb(35, 85, 109);
+    color: bisque; 
+}
+
+.panelBody{
+    width: 590px;
+    height: 590px;
+
+}
+
+.panel-title{
+    text-align: center;
+}
+#trainTable{
+    border-collapse: collapse;
+
+    text-align: center;
+}
+
+#trainTable td,
+#trainTable th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.formHolder{
+    text-align: center;
+}
+#trainTable th {
+    height: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: bisque;
+    color: black;
+}
+
+.min {
+    text-align: center;
+}
+
+#trainTable #times {
+    text-align: center;
+}
