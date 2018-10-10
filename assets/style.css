@@ -13,6 +13,7 @@ h1{
 }
 
 .jumbotron{
+    text-align: center;
     height:300px;
     background-color: pink;
     background-image: url('../assets/images/boston.jpeg');
@@ -25,14 +26,16 @@ img{
 }
 
 #addTrainBtn{
+    text-align: center;
     border-color: bisque;
     background-color: rgb(35, 85, 109);
     color: bisque; 
 }
 
 .panelBody{
-    width: 590px;
-    height: 590px;
+    text-align: center;
+    width: 630px;
+    height: 6320px;
 
 }
 
@@ -54,8 +57,13 @@ img{
 
 .formHolder{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #trainTable th {
+    text-align: center;
     height: 50px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -69,4 +77,8 @@ img{
 
 #trainTable #times {
     text-align: center;
+}
+
+#frequencyInput{
+    width: 210px;
 }
